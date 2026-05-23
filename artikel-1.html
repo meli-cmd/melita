@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Rekomendasi Tempat Outbound - JogjaExplore</title>
+    <meta name="description" content="Temukan 7 rekomendasi tempat outbound terbaik di Yogyakarta mulai dari Kalikuning Park, Goa Kalisuci, hingga Asram Edupark dengan panduan lengkap dan harga estimasi.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans (UI/Heading) & Lora (Article Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Original Custom CSS files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="floating-buttons.css">
+
+    <style>
+        /* --- GLOBAL STYLES --- */
+        :root {
+            --primary-color: #059669; /* Emerald 600 */
+            --text-main: #374151;
+            --bg-light: #F9FAFB;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+        }
+
+        /* --- HERO SECTION --- */
+        .article-hero {
+            position: relative;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 4rem;
+        }
+        
+        .article-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(17, 24, 39, 0.9) 0%, rgba(17, 24, 39, 0.4) 50%, rgba(17, 24, 39, 0.1) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+
+        .hero-badge {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .hero-title {
+            color: #FDE68A !important;
+            font-weight: 800;
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.2;
+            margin: 1.2rem 0;
+            letter-spacing: -1px;
+            text-shadow: 0 4px 18px rgba(0, 0, 0, 0.65);
+        }
+
+        .hero-content .hero-title {
+            color: #FDE68A !important;
+        }
+
+        /* --- ARTICLE BODY --- */
+        .article-wrapper {
+            margin-top: -3rem; /* Overlap effect ke hero image */
+            position: relative;
+            z-index: 10;
+        }
+
+        .article-content {
+            background: #ffffff;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            font-family: 'Lora', serif;
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #4B5563;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .article-content h2 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+            color: #111827;
+            margin-top: 3rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Price Box Custom */
+        .price-box {
+            background: #ECFDF5;
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem 1.5rem;
+            border-radius: 0 12px 12px 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1rem;
+            color: #065F46;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+
+        /* --- SIDEBAR --- */
+        .sidebar-card {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #F3F4F6;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .sidebar-card.text-white h6,
+        .sidebar-card.text-white p,
+        .sidebar-card.text-white strong {
+            color: #ffffff !important;
+        }
+
+        .sidebar-card.text-white p {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        .toc-list a {
+            color: #6B7280;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+            padding: 0.6rem 0;
+            border-bottom: 1px dashed #E5E7EB;
+            transition: all 0.2s ease;
+        }
+        .toc-list a:hover {
+            color: var(--primary-color);
+            padding-left: 8px;
+            font-weight: 600;
+        }
+        .toc-list li:last-child a {
+            border-bottom: none;
+        }
+
+        /* --- AUTHOR & SHARE --- */
+        .author-box {
+            background: #F9FAFB;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 3rem;
+            border: 1px solid #E5E7EB;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .share-btn {
+            width: 45px;
+            height: 45px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+        .share-btn:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+
+        /* Responsive Tweaks */
+        @media (max-width: 768px) {
+            .article-hero {
+                height: 460px;
+                padding-bottom: 3rem;
+            }
+
+            .article-content {
+                padding: 1.5rem;
+                border-radius: 12px;
+            }
+            .article-wrapper {
+                margin-top: -1.5rem;
+            }
+
+            .sticky-top {
+                position: static !important;
+            }
+
+            .article-content .row > .col-6 {
+                width: 50% !important;
+                flex: 0 0 50% !important;
+            }
+
+            .article-content .card-img-top {
+                height: 120px !important;
+            }
+
+            .article-content .card-title {
+                font-size: 0.82rem !important;
+                line-height: 1.25;
+                margin-bottom: 0.4rem;
+            }
+
+            .article-content .card-text {
+                display: block !important;
+                font-size: 0.72rem !important;
+                line-height: 1.35;
+                margin-bottom: 0.5rem !important;
+            }
+
+            .article-content .card-body {
+                padding: 0.85rem !important;
+            }
+
+            .article-content .badge {
+                font-size: 0.66rem !important;
+            }
+
+            .article-content .card .btn {
+                font-size: 0.82rem;
+                padding: 0.5rem 0.65rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navbar Original -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold d-flex align-items-center" href="index.html">
+                <i class="bi bi-geo-alt-fill text-success fs-3 me-2"></i> JogjaExplore
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog & Artikel</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="index.html#cta" class="btn btn-success rounded-pill px-4 fw-semibold">Hubungi Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner (Menggunakan gambar asli) -->
+    <header class="article-hero" style="background-image: url('images/blog1_11zon.webp');">
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-9">
+                    <span class="hero-badge"><i class="bi bi-compass me-1"></i> Destinasi Wisata</span>
+                    <h1 class="hero-title">7 Rekomendasi Tempat Outbound di Jogja yang Seru Abis!</h1>
+                    <div class="d-flex align-items-center gap-3 fs-6 opacity-75">
+                        <span><i class="bi bi-calendar3 me-2"></i> Diperbarui 2026</span>
+                        <span><i class="bi bi-clock me-2"></i> 5 Menit Baca</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container pb-5 article-wrapper">
+        <div class="row g-4">
+            
+            <!-- Left Column: Article Body -->
+            <div class="col-lg-8">
+                <div class="sidebar-card d-lg-none mb-4">
+                    <h6 class="fw-bold text-dark mb-3 d-flex align-items-center">
+                        <i class="bi bi-list-columns-reverse text-success me-2 fs-5"></i> Daftar Isi
+                    </h6>
+                    <ul class="list-unstyled mb-0 toc-list" style="font-family: 'Plus Jakarta Sans', sans-serif !important;">
+                        <li><a href="#toc-1">01. Ledok Sambi</a></li>
+                        <li><a href="#toc-2">02. Kalikuning Park</a></li>
+                        <li><a href="#toc-3">03. Goa Kalisuci</a></li>
+                        <li><a href="#toc-4">04. Puncak Becici</a></li>
+                        <li><a href="#toc-5">05. Sambi Resort</a></li>
+                        <li><a href="#toc-6">06. Dolan Deso Boro</a></li>
+                        <li><a href="#toc-7">07. Asram Edupark</a></li>
+                    </ul>
+                </div>
+                <main class="article-content">
+                    <p class="lead fw-medium" style="font-family: 'Plus Jakarta Sans', sans-serif; color: #374151;">
+                        Yogyakarta selalu memiliki daya tarik istimewa, tak hanya untuk wisata budaya, tapi juga kegiatan alam terbukanya. Kontur alam yang bervariasi mulai dari pantai, goa, hingga pegunungan menjadikannya surga bagi para pecinta tantangan dan rekreasi korporat.
+                    </p>
+                    
+                    <p>Bagi Anda panitia acara kantor yang sedang mencari referensi destinasi, berikut adalah 7 lokasi outbound dan team building terbaik di Jogja yang sangat direkomendasikan:</p>
+                    
+                    <h2 id="toc-1"><span class="text-success me-2">01.</span> Ledok Sambi (Kaliurang)</h2>
+                    <p>Berada di Kabupaten Sleman, Ledok Sambi menawarkan area lahan rumput luas yang terbelah oleh aliran sungai kecil berair jernih. Nuansa sejuk khas lereng Gunung Merapi sangat terasa. Permainan favorit di sini biasanya meliputi <em>Spider Web</em>, <em>Dragon Ball</em>, dan <em>Flying Fox</em>.</p>
+                    <div class="price-box">
+                        <i class="bi bi-tag-fill me-2"></i><strong>Estimasi Harga:</strong> Rp 110.000 – Rp 170.000 / orang
+                    </div>
+
+                    <h2 id="toc-2"><span class="text-success me-2">02.</span> Kalikuning Park (Lereng Merapi)</h2>
+                    <p>Siapa yang tak tertantang beraktivitas dengan latar belakang kegagahan Gunung Merapi? Biasanya, outbound di sini dipaketkan secara khusus dengan <strong>Jeep Lava Tour Merapi</strong>. Peserta akan diajak melintasi sisa erupsi, singgah di Museum Sisa Hartaku, dan bermanuver di Kali Kuning.</p>
+                    <div class="price-box">
+                        <i class="bi bi-tag-fill me-2"></i><strong>Estimasi Harga (Plus Jeep):</strong> Mulai Rp 250.000 / orang
+                    </div>
+
+                    <h2 id="toc-3"><span class="text-success me-2">03.</span> Goa Kalisuci (Gunungkidul)</h2>
+                    <p>Ingin outbound antimainstream? Cobalah <em>Cave Tubing</em> di Goa Kalisuci! Rombongan Anda akan menyusuri sungai bawah tanah menggunakan ban karet pelampung sambil menikmati ornamen stalaktit yang usianya ribuan tahun. Tenang, kegiatan ini dipandu instruktur profesional.</p>
+
+                    <h2 id="toc-4"><span class="text-success me-2">04.</span> Puncak Pinus Becici (Bantul)</h2>
+                    <p>Bagi yang menyukai hawa teduh, Puncak Becici adalah primadonanya. Dikelilingi jajaran pohon pinus tinggi, lokasi ini sering digunakan institusi dari luar Jogja. Terdapat pula gardu pandang untuk melihat keindahan wilayah Bantul dari atas.</p>
+
+                    <h2 id="toc-5"><span class="text-success me-2">05.</span> Sambi Resort and Spa</h2>
+                    <p>Mencari paket lengkap penginapan mewah plus lahan outbound? Sambi Resort memadukan desain modern dan tradisional (pedesaan). Lokasinya strategis dekat Museum Ullen Sentalu, menjadikannya opsi premium bagi jajaran manajerial perusahaan.</p>
+
+                    <h2 id="toc-6"><span class="text-success me-2">06.</span> Dolan Deso Boro (Kulon Progo)</h2>
+                    <p>Di wilayah barat Jogja, Dolan Deso Boro menawarkan wisata edukasi dan pelestarian lingkungan. Rombongan bisa memadukan outbound dengan aktivitas membaur bersama masyarakat, seperti menanam padi atau bersepeda keliling desa Menoreh.</p>
+
+                    <h2 id="toc-7"><span class="text-success me-2">07.</span> Asram Edupark</h2>
+                    <p>Pilihan praktis yang tak terlalu jauh dari pusat kota. Hanya berjarak 11 km, Edupark menawarkan kegiatan outbond ramah segala usia. Bahkan terdapat aktivitas <em>Jemparingan</em> (Panahan Tradisional gaya Mataram) dan fasilitas <em>Glamping</em>.</p>
+
+                    <!-- CTA In-Article -->
+                    <div class="mt-5 p-4 rounded-4" style="background: linear-gradient(135deg, #065F46 0%, #059669 100%); color: white;">
+                        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+                            <div>
+                                <h4 class="fw-bold mb-2">Ingin Harga Spesial Rombongan?</h4>
+                                <p class="mb-0 text-white-50 small" style="font-family: 'Plus Jakarta Sans';">Konsultasikan jumlah peserta, tim kami siapkan itinerary gratis.</p>
+                            </div>
+                            <a href="https://wa.me/6281234567890" class="btn btn-light rounded-pill px-4 fw-bold text-success text-nowrap shadow-sm" target="_blank">
+                                <i class="bi bi-whatsapp me-2"></i> Chat Sekarang
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Author Box Premium (Tanpa Avatar Eksternal) -->
+                    <div class="author-box shadow-sm">
+                        <h5 class="fw-bold text-dark mb-1" style="color: #8B0000 !important;">Profil Penulis</h5>
+                        <h6 class="fw-bold mb-2 fs-5">Memei</h6>
+                        <p class="mb-0 text-muted" style="font-size: 0.95rem; line-height: 1.6;">
+                            Content strategist dan praktisi event management dengan pengalaman lebih dari 5 tahun di industri MICE dan corporate gathering. Spesialis dalam mengidentifikasi destinasi outbound terbaik dan merancang program team building yang impactful.
+                        </p>
+                    </div>
+
+                    <!-- Share Action -->
+                    <div class="d-flex flex-wrap align-items-center gap-3 mt-4 pt-4 border-top" style="font-family: 'Plus Jakarta Sans';">
+                        <span class="fw-bold">Bagikan Artikel Ini:</span>
+                        <div class="d-flex gap-2">
+                            <a href="https://www.facebook.com/share/" class="share-btn" style="background-color: #1877F2;" title="Facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a href="https://twitter.com/intent/tweet/" class="share-btn" style="background-color: #1DA1F2;" title="Twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+                            <a href="https://wa.me/?text=" class="share-btn" style="background-color: #25D366;" title="WhatsApp" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                        
+                        <a href="blog.html" class="btn btn-outline-secondary rounded-pill px-4 ms-md-auto mt-3 mt-md-0">
+                            <i class="bi bi-arrow-left me-2"></i>Kembali ke Blog
+                        </a>
+                    </div>
+                    
+                    <!-- Related Articles (Menggunakan gambar asli) -->
+                    <h3 class="fw-bold mb-4 mt-5 fs-5 fs-md-3" style="font-family: 'Plus Jakarta Sans';">Baca Artikel Lainnya</h3>
+                    <div class="row g-3" style="font-family: 'Plus Jakarta Sans';">
+                        <div class="col-6 col-md-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="images/blog2_11zon.webp" class="card-img-top" alt="Manfaat Outbound" style="height: 180px; object-fit: cover;">
+                                <div class="card-body p-3 p-md-4 d-flex flex-column">
+                                    <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill mb-2 align-self-start">Corporate Edu</span>
+                                    <h5 class="card-title fw-bold fs-6 fs-md-5">Mengapa Perusahaan Wajib Mengadakan Outing?</h5>
+                                    <p class="card-text text-muted d-none d-md-block flex-grow-1 small">Pelajari alasan psikologis mengapa gathering mampu menekan turnover dan meningkatkan produktivitas.</p>
+                                    <a href="artikel-2.html" class="btn btn-outline-dark mt-3 rounded-pill fw-semibold w-100">Baca <i class="bi bi-arrow-right d-none d-md-inline ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="images/blog3.webp" class="card-img-top" alt="Tips Memilih EO" style="height: 180px; object-fit: cover;">
+                                <div class="card-body p-3 p-md-4 d-flex flex-column">
+                                    <span class="badge bg-danger bg-opacity-10 text-danger rounded-pill mb-2 align-self-start">Tips Event</span>
+                                    <h5 class="card-title fw-bold fs-6 fs-md-5">Panduan Memilih Vendor EO Gathering Jogja</h5>
+                                    <p class="card-text text-muted d-none d-md-block flex-grow-1 small">Jangan asal pilih! Kenali ciri-ciri Event Organizer profesional agar dana kantor dialokasikan efektif.</p>
+                                    <a href="artikel-3.html" class="btn btn-outline-dark mt-3 rounded-pill fw-semibold w-100">Baca <i class="bi bi-arrow-right d-none d-md-inline ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <!-- Right Column: Sidebar Premium -->
+            <div class="col-lg-4 d-none d-lg-block">
+                <div class="sticky-top" style="top: 20px;">
+                    
+                    <!-- TOC Sidebar -->
+                    <div class="sidebar-card">
+                        <h6 class="fw-bold text-dark mb-3 d-flex align-items-center">
+                            <i class="bi bi-list-columns-reverse text-success me-2 fs-5"></i> Daftar Isi
+                        </h6>
+                        <ul class="list-unstyled mb-0 toc-list font-monospace" style="font-family: 'Plus Jakarta Sans', sans-serif !important;">
+                            <li><a href="#toc-1">01. Ledok Sambi</a></li>
+                            <li><a href="#toc-2">02. Kalikuning Park</a></li>
+                            <li><a href="#toc-3">03. Goa Kalisuci</a></li>
+                            <li><a href="#toc-4">04. Puncak Becici</a></li>
+                            <li><a href="#toc-5">05. Sambi Resort</a></li>
+                            <li><a href="#toc-6">06. Dolan Deso Boro</a></li>
+                            <li><a href="#toc-7">07. Asram Edupark</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Quick Fact -->
+                    <div class="sidebar-card text-white" style="background: linear-gradient(135deg, #111827 0%, #1F2937 100%);">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-lightbulb-fill text-warning fs-4 me-2"></i>
+                            <h6 class="mb-0 fw-bold">Tips Perusahaan</h6>
+                        </div>
+                        <p class="mb-0 small text-white-50 lh-lg" style="font-family: 'Plus Jakarta Sans';">
+                            Pilih destinasi berdasarkan <strong class="text-white">rentang usia peserta</strong> dan <strong class="text-white">tujuan utama acara</strong> (recreations vs capacity building) agar dana terserap maksimal.
+                        </p>
+                    </div>
+
+                    <!-- CTA Consultation -->
+                    <div class="card border-0 shadow-sm mb-4 overflow-hidden sidebar-card p-0">
+                        <div class="card-body p-0">
+                            <div class="bg-success text-white p-4 text-center rounded-3">
+                                <i class="bi bi-chat-dots fs-3 mb-2 d-block"></i>
+                                <h6 class="fw-bold mb-2">Butuh Rekomendasi?</h6>
+                                <p class="small mb-3 text-white-50">Konsultasi gratis dengan spesialis kami untuk memilih destinasi terbaik sesuai budget.</p>
+                                <a href="https://wa.me/6281234567890" class="btn btn-light btn-sm rounded-pill fw-bold w-100" target="_blank">
+                                    <i class="bi bi-whatsapp me-1 text-success"></i> Chat Sekarang
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Original Custom -->
+    <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+        <div class="container pt-4">
+            <div class="row mb-4">
+                <div class="col-lg-4 mb-4 text-lg-start text-center">
+                    <h4 class="fw-bold mb-3 d-flex align-items-center justify-content-center justify-content-lg-start">
+                        <i class="bi bi-geo-alt-fill text-success me-2"></i> JogjaExplore
+                    </h4>
+                    <p class="text-white-50" style="line-height: 1.8;">Biro perjalanan dan spesialis outbound di Yogyakarta. Kami menciptakan momen perjalanan yang berharga dan tak terlupakan.</p>
+                    <div class="d-flex gap-3 mt-4 justify-content-center justify-content-lg-start">
+                        <a href="#" class="fs-4 text-white hover-lift"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="fs-4 text-white hover-lift"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="fs-4 text-white hover-lift"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 mb-4 text-lg-start text-center">
+                    <h5 class="fw-bold mb-4">Menu Cepat</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3 text-white-50">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none">Beranda</a></li>
+                        <li><a href="about.html" class="text-white-50 text-decoration-none">Tentang Kami</a></li>
+                        <li><a href="blog.html" class="text-white-50 text-decoration-none">Artikel & Tips</a></li>
+                        <li><a href="index.html#paket" class="text-white-50 text-decoration-none">Galeri Wisata</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4 text-lg-start text-center">
+                    <h5 class="fw-bold mb-4">Kontak Kami</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3 text-white-50">
+                        <li class="d-flex align-items-start justify-content-center justify-content-lg-start">
+                            <i class="bi bi-geo-alt text-success me-3 mt-1 fs-5"></i> 
+                            <span>Jl. Ringroad Utara No. 88, Yogyakarta</span>
+                        </li>
+                        <li class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <i class="bi bi-telephone text-success me-3 fs-5"></i> 
+                            <span>+62 812 3456 7890</span>
+                        </li>
+                        <li class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <i class="bi bi-envelope text-success me-3 fs-5"></i> 
+                            <span>hello@jogjaexplore.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary mb-4">
+            <div class="text-center text-white-50">
+                <small>&copy; 2026 JogjaExplore. Designed Professionally for B2B Standards.</small>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20dengan%20paket%20tour%20Anda" class="floating-wa" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i></a>
+    <a href="#" class="back-to-top" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></a>
+    <!-- Bootstrap JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Smooth Scroll Script for Table of Contents -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const floatingWA = document.querySelector('.floating-wa');
+            const backToTop = document.querySelector('.back-to-top');
+
+            if (window.scrollY > 300) {
+                if (floatingWA) floatingWA.classList.add('show');
+                if (backToTop) backToTop.classList.add('show');
+            } else {
+                if (floatingWA) floatingWA.classList.remove('show');
+                if (backToTop) backToTop.classList.remove('show');
+            }
+        });
+
+        const backToTopBtn = document.querySelector('.back-to-top');
+        if (backToTopBtn) {
+            backToTopBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        document.querySelectorAll('a[href^="#toc-"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                const offset = 40; // Penyesuaian karena navbar tidak sticky
+                const bodyRect = document.body.getBoundingClientRect().top;
+                const elementRect = target.getBoundingClientRect().top;
+                const elementPosition = elementRect - bodyRect;
+                const offsetPosition = elementPosition - offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

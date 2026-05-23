@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <defs>
+    <style>
+      .logo-bg { fill: #059669; }
+      .logo-icon { fill: #ffffff; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <circle cx="90" cy="90" r="90" class="logo-bg"/>
+  <!-- Location Pin Icon -->
+  <path class="logo-icon" d="M90 50C75.7 50 64 61.7 64 76c0 20 26 54 26 54s26-34 26-54c0-14.3-11.7-26-26-26zm0 35.5c-5.2 0-9.5-4.3-9.5-9.5s4.3-9.5 9.5-9.5 9.5 4.3 9.5 9.5-4.3 9.5-9.5 9.5z"/>
+</svg>
