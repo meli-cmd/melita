@@ -290,6 +290,72 @@ footer a:hover { color: var(--accent) !important; }
         font-size: 1rem;
     }
 
+    #blog-preview .row > .col-6 {
+        width: 50% !important;
+        flex: 0 0 50% !important;
+    }
+
+    #blog-preview .container {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+
+    #blog-preview .row.align-items-end {
+        margin-bottom: 1.5rem !important;
+    }
+
+    #blog-preview .card-img-top {
+        height: 120px;
+    }
+
+    #blog-preview .card-body {
+        padding: 0.85rem;
+    }
+
+    #blog-preview .card-title {
+        font-size: 0.84rem !important;
+        line-height: 1.25;
+    }
+
+    #blog-preview .card-text {
+        font-size: 0.72rem !important;
+        line-height: 1.35;
+        margin-bottom: 0.65rem !important;
+    }
+
+    #blog-preview .card .btn {
+        font-size: 0.82rem;
+        padding: 0.5rem 0.65rem;
+    }
+
+    #blog-preview .col-lg-5 .btn {
+        width: 100%;
+    }
+
+    #cta .container {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .cta-section {
+        border-radius: 20px;
+        padding: 1.5rem !important;
+    }
+
+    .cta-section .display-6 {
+        font-size: 1.65rem !important;
+    }
+
+    .cta-section .lead {
+        font-size: 0.95rem !important;
+        line-height: 1.6;
+    }
+
+    .cta-section .btn {
+        width: 100%;
+        white-space: normal;
+    }
+
     .gallery-scroll-row::-webkit-scrollbar {
         height: 6px;
     }
